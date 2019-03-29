@@ -13,3 +13,7 @@ cp -i /"location"/"of"/"folder" ~/"target_location"
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Property of Fake Company: If Found Please Email security@fakecompany.com"
 # This command sets the .local computer name you can enter asset numbers etc to this field
 sudo scutil --set ComputerName
+# Use this command to list the available updates
+softwareupdate -l
+# Use this command to update all available updates
+softwareupdate -i -a 
