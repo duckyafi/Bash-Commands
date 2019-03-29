@@ -3,6 +3,8 @@
 sudo dscl . create /Users/"username" IsHidden 1
 # This shows your basic system info system information on your Mac login screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo IPAddress
+# This Turns on "Tap To Click" (this works after a log out login in, the checkbox will not be turned even though it works)
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 # This command turns on remote login function on under sharing located in System Preferences
 sudo systemsetup -setremotelogin on
 # This command turns on the Remote Management function located in System Preferences
