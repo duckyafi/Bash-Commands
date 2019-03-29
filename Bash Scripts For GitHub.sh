@@ -7,6 +7,8 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo IPA
 sudo systemsetup -setremotelogin on
 # This command turns on the Remote Management function located in System Preferences
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users admin -privs -all -restart -agent -menu
+# This commnand turns on Remote Managment for all users with menu extra
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -allowAccessFor -allUsers -privs -all -clientopts -setmenuextra -menuextra yes
 # I use this command to copy a folder full of images from an external source that I use for all the standard wallpaper
 cp -i /"location"/"of"/"folder" ~/"target_location"
 # This command writes a message on the login screen
