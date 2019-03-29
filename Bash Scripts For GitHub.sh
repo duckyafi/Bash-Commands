@@ -23,3 +23,5 @@ sudo scutil --set ComputerName
 softwareupdate -l
 # Use this command to update all available updates
 softwareupdate -i -a 
+# Use this command to grab the serial number off your machince
+ioreg -l | grep IOPlatformSerialNumber
