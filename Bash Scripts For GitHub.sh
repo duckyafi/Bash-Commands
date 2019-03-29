@@ -25,3 +25,6 @@ softwareupdate -l
 softwareupdate -i -a 
 # Use this command to grab the serial number off your machince
 ioreg -l | grep IOPlatformSerialNumber
+# These sets of commands turn on the battery percentage feature
+defaults write com.apple.menuextra.battery ShowPercent YES
+killall SystemUIServer
