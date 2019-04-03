@@ -28,3 +28,5 @@ ioreg -l | grep IOPlatformSerialNumber
 # These sets of commands turn on the battery percentage feature
 defaults write com.apple.menuextra.battery ShowPercent YES
 killall SystemUIServer
+# This command changes the background wallpaper
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/path/to/file/.jpg"'
