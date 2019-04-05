@@ -30,3 +30,5 @@ defaults write com.apple.menuextra.battery ShowPercent YES
 killall SystemUIServer
 # This command changes the background wallpaper
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/path/to/file/.jpg"'
+# This command looks at the MAC OS X software version
+system_profiler SPSoftwareDataType
