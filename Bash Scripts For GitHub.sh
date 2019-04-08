@@ -32,3 +32,5 @@ killall SystemUIServer
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/path/to/file/.jpg"'
 # This command looks at the MAC OS X software version
 system_profiler SPSoftwareDataType
+# Use this command to have the user reset their password once logged in for the first time
+pwpolicy -a exampleuser -u user.name setpolicy "newPasswordRequired=1"
