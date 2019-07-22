@@ -34,3 +34,5 @@ osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/p
 system_profiler SPSoftwareDataType
 # Use this command to have the user reset their password once logged in for the first time
 pwpolicy -a exampleuser -u user.name setpolicy "newPasswordRequired=1"
+# This command allows you to change an admin user into a standard user
+sudo -s dseditgroup -o edit -d UserName -t user admin
