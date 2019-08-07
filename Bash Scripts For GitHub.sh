@@ -36,3 +36,5 @@ system_profiler SPSoftwareDataType
 pwpolicy -a exampleuser -u user.name setpolicy "newPasswordRequired=1"
 # This command allows you to change an admin user into a standard user
 sudo -s dseditgroup -o edit -d UserName -t user admin
+# This commands fixes an issue when you remote into a computer remotely and when you logoout it locks out the computer
+sudo defaults write /Library/Preferences/com.apple.RemoteManagement RestoreMachineState -bool NO
