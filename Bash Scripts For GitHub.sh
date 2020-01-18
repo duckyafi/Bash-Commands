@@ -22,7 +22,7 @@ sudo scutil --set ComputerName
 # Use this command to list the available updates
 softwareupdate -l
 # Use this command to update all available updates
-softwareupdate -i -a 
+softwareupdate -i -a
 # Use this command to grab the serial number off your machince
 ioreg -l | grep IOPlatformSerialNumber
 # These sets of commands turn on the battery percentage feature
@@ -36,5 +36,5 @@ system_profiler SPSoftwareDataType
 pwpolicy -a exampleuser -u user.name setpolicy "newPasswordRequired=1"
 # This command allows you to change an admin user into a standard user
 sudo -s dseditgroup -o edit -d UserName -t user admin
-# This commands fixes an issue when you remote into a computer remotely and when you logoout it locks out the computer
+# How to stop display from turning off when I disconnect a Screen Sharing client
 sudo defaults write /Library/Preferences/com.apple.RemoteManagement RestoreMachineState -bool NO
